@@ -5,6 +5,7 @@ import android.media.AudioManager;
 import android.view.InputDevice;
 import android.view.KeyEvent;
 import android.view.inputmethod.InputConnection;
+import android.widget.EditText;
 
 import com.sinux.pocketboard.PocketBoardIME;
 
@@ -20,48 +21,38 @@ public class SymPadInputHandler extends ProxyInputHandler {
     @Override
     protected int translateShortPressKeyCode(int keyCode) {
         switch (keyCode) {
-            // R, U - Home, F, J - End (text navigation)
-            case KeyEvent.KEYCODE_R:
             case KeyEvent.KEYCODE_U:
                 return KeyEvent.KEYCODE_MOVE_HOME;
-            case KeyEvent.KEYCODE_F:
-            case KeyEvent.KEYCODE_J:
-                return KeyEvent.KEYCODE_MOVE_END;
-            // Q, W, E, A, S, D, Z, X, C or I, O, P, K, L, DEL, N, M, ENTER - 9-positional D-pad
-            case KeyEvent.KEYCODE_Q:
-            case KeyEvent.KEYCODE_I:
-                return KeyEvent.KEYCODE_DPAD_UP_LEFT;
-            case KeyEvent.KEYCODE_W:
-            case KeyEvent.KEYCODE_O:
-                return KeyEvent.KEYCODE_DPAD_UP;
-            case KeyEvent.KEYCODE_E:
-            case KeyEvent.KEYCODE_P:
-                return KeyEvent.KEYCODE_DPAD_UP_RIGHT;
-            case KeyEvent.KEYCODE_A:
-            case KeyEvent.KEYCODE_K:
-                return KeyEvent.KEYCODE_DPAD_LEFT;
-            case KeyEvent.KEYCODE_S:
-            case KeyEvent.KEYCODE_L:
-                return KeyEvent.KEYCODE_DPAD_CENTER;
-            case KeyEvent.KEYCODE_D:
-            case KeyEvent.KEYCODE_DEL:
-                return KeyEvent.KEYCODE_DPAD_RIGHT;
-            case KeyEvent.KEYCODE_Z:
-            case KeyEvent.KEYCODE_N:
-                return KeyEvent.KEYCODE_DPAD_DOWN_LEFT;
-            case KeyEvent.KEYCODE_X:
-            case KeyEvent.KEYCODE_M:
-                return KeyEvent.KEYCODE_DPAD_DOWN;
-            case KeyEvent.KEYCODE_C:
-            case KeyEvent.KEYCODE_ENTER:
-                return KeyEvent.KEYCODE_DPAD_DOWN_RIGHT;
-            // V - Prev, Space - Play/Pause, B - Next (media navigation)
-            case KeyEvent.KEYCODE_V:
-                return KeyEvent.KEYCODE_MEDIA_PREVIOUS;
-            case KeyEvent.KEYCODE_SPACE:
-                return KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE;
             case KeyEvent.KEYCODE_B:
-                return KeyEvent.KEYCODE_MEDIA_NEXT;
+                return KeyEvent.KEYCODE_MOVE_END;
+            case KeyEvent.KEYCODE_O:
+                return KeyEvent.KEYCODE_PAGE_UP;
+            case KeyEvent.KEYCODE_M:
+                return KeyEvent.KEYCODE_PAGE_DOWN;
+            case KeyEvent.KEYCODE_H:
+                return KeyEvent.KEYCODE_DPAD_LEFT;
+            case KeyEvent.KEYCODE_J:
+                return KeyEvent.KEYCODE_DPAD_DOWN;
+            case KeyEvent.KEYCODE_K:
+                return KeyEvent.KEYCODE_DPAD_UP;
+            case KeyEvent.KEYCODE_L:
+                return KeyEvent.KEYCODE_DPAD_RIGHT;
+            case KeyEvent.KEYCODE_DEL:
+                return KeyEvent.KEYCODE_DEL;
+            case KeyEvent.KEYCODE_P:
+                return KeyEvent.KEYCODE_FORWARD_DEL;
+            case KeyEvent.KEYCODE_X:
+                   return KeyEvent.KEYCODE_CUT;
+            case KeyEvent.KEYCODE_C:
+                   return KeyEvent.KEYCODE_COPY;
+            case KeyEvent.KEYCODE_V:
+                return KeyEvent.KEYCODE_PASTE;
+            case KeyEvent.KEYCODE_SPACE:
+                return KeyEvent.KEYCODE_SPACE;
+            case KeyEvent.KEYCODE_ENTER:
+                return KeyEvent.KEYCODE_ENTER;
+            case KeyEvent.KEYCODE_I:
+                return KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE;
         }
 
         return 0;

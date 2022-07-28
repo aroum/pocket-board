@@ -1,61 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <KeyboardMapping>
     <!-- Q -->
-    <Key code="45" value="й" shiftValue="Й">
-        <Add value="ц" shiftValue="Ц" />
+    <Key code="45" shiftValue="Й" value="й">
+        <Add shiftValue="Э" value="э" />
         <Alt value="0" />
     </Key>
     <!-- W -->
-    <Key code="51" value="у" shiftValue="У">
+    <Key code="51" shiftValue="Б" value="б">
         <Alt value="1" />
     </Key>
     <!-- E -->
-    <Key code="33" value="к" shiftValue="К">
+    <Key code="33" shiftValue="У" value="у">
         <Alt value="2" />
     </Key>
     <!-- R -->
-    <Key code="46" value="е" shiftValue="Е">
-        <Add value="ё" shiftValue="Ё" />
+    <Key code="46" shiftValue="К" value="к">
         <Alt value="3" />
     </Key>
     <!-- T -->
-    <Key code="48" value="н" shiftValue="Н">
+    <Key code="48" shiftValue="Е" value="е">
         <Alt value="(" />
         <Alt value="{" />
         <Alt value="[" />
         <Alt value="&lt;" />
     </Key>
     <!-- Y -->
-    <Key code="53" value="г" shiftValue="Г">
+    <Key code="53" shiftValue="Н" value="н">
         <Alt value=")" />
         <Alt value="}" />
         <Alt value="]" />
-        <Alt value="&gt;" />
+        <Alt value=">" />
     </Key>
     <!-- U -->
-    <Key code="49" value="ш" shiftValue="Ш">
-        <Add value="щ" shiftValue="Щ" />
+    <Key code="49" shiftValue="Г" value="г">
         <Alt value="-" />
         <Alt value="~" />
     </Key>
     <!-- I -->
-    <Key code="37" value="з" shiftValue="З">
+    <Key code="37" shiftValue="Ш" value="ш">
+        <Add shiftValue="Щ" value="щ" />
         <Alt value="_" />
     </Key>
     <!-- O -->
-    <Key code="43" value="х" shiftValue="Х">
-        <Add value="ъ" shiftValue="Ъ" />
+    <Key code="43" shiftValue="З" value="з">
         <Alt value="/" />
         <Alt value="\\" />
     </Key>
     <!-- P -->
-    <Key code="44" value="ю" shiftValue="Ю">
+    <Key code="44" shiftValue="Х" value="х">
+        <Add shiftValue="Ц" value="ц" />
         <Alt value=":" />
         <Alt value=";" />
     </Key>
-
     <!-- A -->
-    <Key code="29" value="ф" shiftValue="Ф">
+    <Key code="29" shiftValue="Ж" value="ж">
         <Add value="ы" shiftValue="Ы" />
         <Alt value="@" />
         <Alt value="&amp;" />
@@ -65,42 +63,43 @@
         <Alt value="₽" />
     </Key>
     <!-- S -->
-    <Key code="47" value="в" shiftValue="В">
+    <Key code="47" shiftValue="Ы" value="ы">
+        <Add shiftValue="Ю" value="ю" />
         <Alt value="4" />
     </Key>
     <!-- D -->
-    <Key code="32" value="а" shiftValue="А">
+    <Key code="32" shiftValue="В" value="в">
         <Alt value="5" />
     </Key>
     <!-- F -->
-    <Key code="34" value="п" shiftValue="П">
+    <Key code="34" shiftValue="А" value="а">
         <Alt value="6" />
     </Key>
     <!-- G -->
-    <Key code="35" value="р" shiftValue="Р">
+    <Key code="35" shiftValue="П" value="п">
         <Alt value="*" />
         <Alt value="=" />
         <Alt value="≈" />
     </Key>
     <!-- H -->
-    <Key code="36" value="о" shiftValue="О">
+    <Key code="36" shiftValue="Р" value="р">
         <Alt value="#" />
         <Alt value="№" />
         <Alt value="%" />
     </Key>
     <!-- J -->
-    <Key code="38" value="л" shiftValue="Л">
+    <Key code="38" shiftValue="О" value="о">
         <Alt value="+" />
         <Alt value="±" />
     </Key>
     <!-- K -->
-    <Key code="39" value="д" shiftValue="Д">
+    <Key code="39" shiftValue="Л" value="л">
         <Alt value="&quot;" />
         <Alt value="«" />
         <Alt value="»" />
     </Key>
     <!-- L -->
-    <Key code="40" value="ж" shiftValue="Ж">
+    <Key code="40" shiftValue="Д" value="д">
         <Add value="э" shiftValue="Э" />
         <Alt value="&apos;" />
         <Alt value="`" />
@@ -108,32 +107,33 @@
     </Key>
 
     <!-- Z -->
-    <Key code="54" value="я" shiftValue="Я">
-        <Add value="ч" shiftValue="Ч" />
+    <Key code="54" shiftValue="Я" value="я">
         <Alt value="!" />
     </Key>
     <!-- X -->
-    <Key code="52" value="с" shiftValue="С">
+    <Key code="52" shiftValue="Ч" value="ч">
+        <Add shiftValue="Ф" value="ф" />
         <Alt value="7" />
     </Key>
     <!-- C -->
-    <Key code="31" value="м" shiftValue="М">
+    <Key code="31" shiftValue="С" value="с">
         <Alt value="8" />
     </Key>
     <!-- V -->
-    <Key code="50" value="и" shiftValue="И">
+    <Key code="50" shiftValue="М" value="м">
         <Alt value="9" />
     </Key>
     <!-- B -->
-    <Key code="30" value="т" shiftValue="Т">
+    <Key code="30" shiftValue="И" value="и">
         <Alt value="." />
     </Key>
     <!-- N -->
-    <Key code="42" value="ь" shiftValue="Ь">
+    <Key code="42" shiftValue="Т" value="т">
         <Alt value="," />
     </Key>
     <!-- M -->
-    <Key code="41" value="б" shiftValue="Б">
+    <Key code="41" shiftValue="Ь" value="ь">
+        <Add shiftValue="Ъ" value="ъ" />
         <Alt value="?" />
     </Key>
 </KeyboardMapping>
