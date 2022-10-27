@@ -19,3 +19,17 @@ jbak2 4row](https://github.com/aroum/jbak2_4row_orto_kbd)), а также нав
 
 
 А от слоя навигации SYM, хотелось получить возможность полноценно редактировать тексты, без постоянного переключения на буквенный слой чтобы удалить один знак. 
+
+
+## Сборка APK
+
+Я использую [Android Studio](https://developer.android.com/studio), но 
+
+1) File > Open > pocket-board
+2) Build > Generate Signed Bundle/APK... 
+3) APK > Next
+4) Выберите свой действующий ключ или сгенерируйте новый  > Next
+5) release > Next
+6) Finish
+7) После сборки APK будут доступен в папке 
+```app/release/app-release.apk```

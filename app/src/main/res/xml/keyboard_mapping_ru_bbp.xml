@@ -100,7 +100,6 @@
     </Key>
     <!-- L -->
     <Key code="40" shiftValue="Д" value="д">
-        <Add value="э" shiftValue="Э" />
         <Alt value="&apos;" />
         <Alt value="`" />
         <Alt value="^" />
